@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <title>Vehicle ranking details</title>
+  </head>
+  <body>
+      <h1>Vehicle ranking details</h1>
+      <hr/>
+      <table border="1">
+          <tr>
+              <th>vin</th>
+              <th>Model_year</th>
+              <th>Vehicle_company</th>
+              <th>Top_model</th>
+          </tr>
+          {% for getdata in RankVehDetails %}
+          <tr>
+              <td>{{getdata.vin}}</td>
+              <td>{{getdata.Model_year}}</td>
+              <td>{{getdata.Vehicle_company}}</td>
+              <td>{{getdata.Top_model}}</td>
+          </tr>
+          {% endfor %}
+      </table>
+  </body>
+</html>

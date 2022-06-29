@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Search Passenger</title>
+    </head>
+    <body>
+
+        <form action="{% url 'DriverEarnings' %}" method="POST">  
+            {% csrf_token %} 
+            <h1>Do you want to reward the Drivers who has more then X years of Experience?</h1>
+
+            <h3>Then Enter X:</h3>
+            <input type="text" name="Years" placeholder="X"> <br> 
+            <br>
+            <button type="submit">Submit</button> <br>
+
+            <br>
+            <a href="{% url 'DriverEarnings' %}">See the Earnings of the Drivers.</a> <br>
+        </form>
+
+    </body>
+</html> 

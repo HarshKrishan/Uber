@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Update Age</title>
+    </head>
+    <body>
+
+        <form action="{% url 'UpdateAge' %}" method="POST">  
+            {% csrf_token %} 
+            <h1>Enter the Phone Number and Updated Age of the Passenger:</h1> 
+            <input type="text" name="Passenger_Phone" placeholder="Enter Phone Number"> <br> 
+            <br>
+            <br> 
+            <input type="number" name="Passenger_Age" placeholder="Enter Updated Age"> <br>
+            <br>
+            <br> 
+            <button type="submit">Submit</button> <br> 
+        </form>
+
+    </body>
+</html> 

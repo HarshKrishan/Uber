@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Taking input of passenger</title>
+    </head>
+ 
+    <body>
+        <h1>Take input of passengers</h1>
+        <form method="POST" enctype="multipart/form-data">
+            {% csrf_token %}
+            
+            {{ form.as_p }}
+            <input type="submit" value="Submit">
+        </form>
+
+        <br>
+        <a href="{% url 'main' %}" type="button" class="w-100 btn btn-lg btn-outline-primary">Go back to registrations</a>
+    </body> 
+</html>
+ 

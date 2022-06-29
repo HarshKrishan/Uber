@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Taking input of Trip</title>
+    </head>
+ 
+    <body>
+        <h1>Enter the details of Trip</h1> 
+        <form method="POST" enctype="multipart/form-data">
+            {% csrf_token %}
+            
+            {{ form.as_p }}
+            <input type="submit" value="Submit">
+        </form>
+
+        <br>
+        <a href="{% url 'main' %}" type="button" class="w-100 btn btn-lg btn-outline-primary">Go back to registrations</a>
+    </body> 
+</html>
+ 

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Search Passenger</title>
+    </head>
+    <body>
+
+        <form action="{% url 'VehicleColor' %}" method="POST">  
+            {% csrf_token %} 
+            <h1>Search Vehicle By Colors</h1>
+
+            
+            <input type="text" name="Color" placeholder="Color"> <br> 
+            <br>
+            <button type="submit">Submit</button> <br>
+
+            <br>
+        </form>
+
+    </body>
+</html> 

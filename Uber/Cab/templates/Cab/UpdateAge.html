@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <title>Passenger details</title>
+  </head>
+  <body>
+      <h1>Passenger details</h1>
+      <hr/>
+      <table border="1">
+          <tr>
+              <th>Name</th>
+              <th>Phone_Number</th>
+              <th>Email_id</th>
+              <th>Age</th>
+              <th>Mode_of_payment</th>
+              <!-- <th>Type</th>
+              <th>Vehicle_company</th>
+              <th>Fuel</th>
+              <th>Prime_ride</th> -->
+          </tr>
+          {% for getdata in PassengerDetails %}
+          <tr>
+              <td>{{getdata.Name}}</td>
+              <td>{{getdata.Phone_Number}}</td>
+              <td>{{getdata.Email_id}}</td>
+              <td>{{getdata.Age}}</td>
+              <td>{{getdata.Mode_of_payment}}</td>
+              <!-- <td>{{getdata.Type}}</td>
+              <td>{{getdata.Vehicle_company}}</td>
+              <td>{{getdata.Fuel}}</td>
+              <td>{{getdata.Prime_ride}}</td> -->
+          </tr>
+          {% endfor %}
+      </table>
+  </body>
+</html>

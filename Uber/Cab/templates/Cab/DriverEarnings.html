@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <title>Driver details</title>
+  </head>
+  <body>
+      <h1>Driver details</h1>
+      <hr/>
+      <table border="1">
+          <tr>
+              <th>id</th>
+              <th>Name</th>
+              <th>Phone_No</th>
+              <th>Aadhaar_Number</th>
+              <th>Age</th>
+              <th>Address</th>
+              <th>Experience</th>
+              <th>Rating</th>
+              <th>Earning</th>
+          </tr>
+          {% for getdata in DriverDetails %}
+          <tr>
+              <td>{{getdata.id}}</td>
+              <td>{{getdata.Name}}</td>
+              <td>{{getdata.Phone_No}}</td>
+              <td>{{getdata.Aadhaar_Number}}</td>
+              <td>{{getdata.Age}}</td>
+              <td>{{getdata.Address}}</td>
+              <td>{{getdata.Experience}}</td>
+              <td>{{getdata.Rating}}</td>
+              <td>{{getdata.Earning}}</td>
+          </tr>
+          {% endfor %}
+      </table>
+  </body>
+</html>

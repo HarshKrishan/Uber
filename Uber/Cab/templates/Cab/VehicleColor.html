@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <title>Vehicle details</title>
+  </head>
+  <body>
+      <h1>vehicle details</h1>
+      <hr/>
+      <!-- { % if colour is not null % }
+      <h2>vehicles of {{colour}} colour:</h2>
+      {endif} -->
+      <table border="1">
+          <tr>
+              <th>vin</th>
+              <th>color</th>
+              <th>AC</th>
+              <th>WiFi</th>
+              <th>Model_year</th>
+              <th>Type</th>
+              <th>Vehicle_company</th>
+              <th>Fuel</th>
+              <th>Prime_ride</th>
+          </tr>
+          {% for getdata in VehicleDetails %}
+          <tr>
+              <td>{{getdata.vin}}</td>
+              <td>{{getdata.color}}</td>
+              <td>{{getdata.AC}}</td>
+              <td>{{getdata.WiFi}}</td>
+              <td>{{getdata.Model_year}}</td>
+              <td>{{getdata.Type}}</td>
+              <td>{{getdata.Vehicle_company}}</td>
+              <td>{{getdata.Fuel}}</td>
+              <td>{{getdata.Prime_ride}}</td>
+          </tr>
+          {% endfor %}
+      </table>
+  </body>
+</html>
